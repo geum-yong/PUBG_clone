@@ -1,0 +1,28 @@
+@charset 'UTF-8';
+
+/* 기본 폰트 사이즈 */
+html {
+  font-size: 16px;
+}
+
+/* 스킵 네비게이션 */
+.skip-nav li {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+}
+.skip-nav li a {
+  position: absolute;
+  transform: translateY(-130%);
+  margin: 10px 0;
+  padding: 10px 0;
+  color: #fff;
+}
+.skip-nav li a:active,
+.skip-nav li a:focus {
+  position: static;
+  transform: none;
+}
