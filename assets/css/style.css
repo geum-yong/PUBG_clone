@@ -6,6 +6,18 @@ html {
   font-family: 'Teko', sans-serif;
 }
 
+/* 숨긴 콘텐츠 */
+.a11y-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  margin: -1px;
+  clip-path: polygon(0 0, 0 0, 0 0);
+  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
+}
+
 /* 스킵 네비게이션 */
 .skip-nav li {
   display: flex;
