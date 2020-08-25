@@ -1,8 +1,9 @@
 @charset 'UTF-8';
 
-/* 기본 폰트 사이즈 */
+/* 기본 폰트 종류 및 사이즈 */
 html {
   font-size: 16px;
+  font-family: 'Teko', sans-serif;
 }
 
 /* 스킵 네비게이션 */
@@ -25,4 +26,86 @@ html {
 .skip-nav li a:focus {
   position: static;
   transform: none;
+}
+
+/* 헤더 */
+.header {
+  display: flex;
+  flex-flow: row nowrap;
+  height: 80px;
+  background-color: #161616;
+}
+.header-heading a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 155px;
+  height: 100%;
+  font-size: 2.5rem;
+  border-bottom: 5px solid #fff;
+  background-color: #252525;
+  color: #fff;
+}
+.main-menu {
+  flex: 1;
+}
+.menu-list {
+  display: flex;
+  flex-flow: row nowrap;
+  height: 100%;
+}
+.menu-list li {
+  height: 100%;
+}
+.menu-list li a {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  height: 100%;
+  font-size: 1.25rem;
+  color: #adadad;
+}
+.menu-list li:nth-child(-2n + 3) a {
+  color: #f2a900;
+}
+.menu-list li a:hover {
+  color: #fff;
+}
+.menu-list li a i {
+  margin-left: 3px;
+  font-size: 0.7rem;
+}
+.utility {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.utility li a {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  padding: 0 20px;
+  height: 100%;
+  font-size: 1.25rem;
+  color: #adadad;
+}
+.utility li a:hover {
+  color: #fff;
+}
+.utility li a:first-child i {
+  padding-right: 15px;
+  font-size: 0.8rem;
+}
+.utility li:last-child a i {
+  font-size: 1.25rem;
+}
+.buy-btn {
+  width: 150px;
+  height: 100%;
+  background-color: #f2a900;
+  font-size: 1.2rem;
+  color: #fff;
+}
+.buy-btn i {
+  margin-left: 5px;
+  font-size: 0.8rem;
 }
