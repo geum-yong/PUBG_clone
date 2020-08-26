@@ -90,6 +90,7 @@ html {
 .utility {
   display: flex;
   flex-flow: row nowrap;
+  padding-right: 10px;
 }
 .utility li a {
   display: flex;
@@ -103,7 +104,7 @@ html {
 .utility li a:hover {
   color: #fff;
 }
-.utility li a:first-child i {
+.utility li:first-child a i {
   padding-right: 15px;
   font-size: 0.8rem;
 }
@@ -120,4 +121,55 @@ html {
 .buy-btn i {
   margin-left: 5px;
   font-size: 0.8rem;
+}
+.mobile-menu-btn {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  background-color: #f2a900;
+}
+.ham-box {
+  position: relative;
+  width: 30px;
+  height: 27px;
+}
+.ham-bar {
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  border-radius: 5px;
+  background-color: #fff;
+}
+.first-bar {
+  top: 0;
+}
+.second-bar {
+  top: 50%;
+  transform: translateY(-50%);
+}
+.last-bar {
+  bottom: 0;
+}
+
+@media (max-width: 1400px) {
+  .header {
+    height: 60px;
+  }
+  .header-heading a {
+    width: 100px;
+    border-bottom: 0;
+    background-color: transparent;
+    color: #adadad;
+  }
+  .main-menu {
+    display: none;
+  }
+  .utility {
+    margin-left: auto;
+  }
+  .buy-btn {
+    display: none;
+  }
 }
