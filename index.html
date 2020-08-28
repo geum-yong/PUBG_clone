@@ -144,8 +144,8 @@
   <body>
     <div class="skip-nav">
       <ul>
-        <li><a href="#">메뉴 바로가기</a></li>
-        <li><a href="#">본문 바로가기</a></li>
+        <li class="skip-nav-item"><a href="#">메뉴 바로가기</a></li>
+        <li class="skip-nav-item"><a href="#">본문 바로가기</a></li>
       </ul>
     </div>
     <div class="wrapper">
@@ -154,31 +154,31 @@
         <nav class="main-menu">
           <h2 class="a11y-hidden">메인 메뉴</h2>
           <ul class="menu-list">
-            <li>
+            <li class="menu-list-item">
               <a href="#">생존자 가이드<i class="fas fa-share-square"></i></a>
             </li>
-            <li><a href="#">뉴스</a></li>
-            <li>
+            <li class="menu-list-item"><a href="#">뉴스</a></li>
+            <li class="menu-list-item">
               <a href="#">시즌8<i class="fas fa-share-square"></i></a>
             </li>
-            <li>
+            <li class="menu-list-item">
               <a href="#">커뮤니티<i class="fas fa-chevron-down"></i></a>
             </li>
-            <li><a href="#">상품</a></li>
-            <li><a href="#">고객지원</a></li>
-            <li>
+            <li class="menu-list-item"><a href="#">상품</a></li>
+            <li class="menu-list-item"><a href="#">고객지원</a></li>
+            <li class="menu-list-item">
               <a href="#">ESPORTS<i class="fas fa-share-square"></i></a>
             </li>
-            <li>
+            <li class="menu-list-item">
               <a href="#">채용<i class="fas fa-share-square"></i></a>
             </li>
           </ul>
         </nav>
         <ul class="utility">
-          <li>
+          <li class="utility-item">
             <a href="#"><i class="fas fa-user"></i>LOGIN</a>
           </li>
-          <li>
+          <li class="utility-item">
             <a href="#" aria-label="언어 선택"><i class="fas fa-globe"></i></a>
           </li>
         </ul>
@@ -263,9 +263,9 @@
       </main>
       <footer class="footer">
         <ul class="SNS-list">
-          <li><a href="#">공식 페이스북</a></li>
-          <li><a href="#">공식 유튜브 채널</a></li>
-          <li><a href="#">공식 네이버 카페</a></li>
+          <li class="SNS-list-item"><a href="#">공식 페이스북</a></li>
+          <li class="SNS-list-item"><a href="#">공식 유튜브 채널</a></li>
+          <li class="SNS-list-item"><a href="#">공식 네이버 카페</a></li>
         </ul>
         <div class="corp">
           <small class="copy-content">
@@ -279,22 +279,28 @@
             </span>
           </small>
           <ul class="corp-list">
-            <li><a href="#">개인정보 처리방침</a></li>
-            <li><a href="#">이용자 제작 콘텐츠 규칙</a></li>
-            <li><a href="#">이용약관</a></li>
-            <li><a href="#">운용정책</a></li>
-            <li><a href="#">최종 사용자 라이선스 계약</a></li>
-            <li><a href="#">청약철회 규정</a></li>
+            <li class="corp-list-item"><a href="#">개인정보 처리방침</a></li>
+            <li class="corp-list-item">
+              <a href="#">이용자 제작 콘텐츠 규칙</a>
+            </li>
+            <li class="corp-list-item"><a href="#">이용약관</a></li>
+            <li class="corp-list-item"><a href="#">운용정책</a></li>
+            <li class="corp-list-item">
+              <a href="#">최종 사용자 라이선스 계약</a>
+            </li>
+            <li class="corp-list-item"><a href="#">청약철회 규정</a></li>
           </ul>
         </div>
-        <img
-          class="footer-img"
-          src="assets/img/footer-img.png"
-          alt="
-              폭력성이 있으며, 청소년 이용불가 프로그램입니다.
-              제명: 배틀그라운드, 이용등급: 청소년이용불가, 등급분류일자: 2017년 4월 26일, 상호: (주)카카오게임즈
-            "
-        />
+        <a href="#" class="footer-img">
+          <img
+            src="assets/img/footer-img.png"
+            alt="폭력성이 있으며, 청소년 이용불가 프로그램입니다."
+          />
+          <p class="a11y-hidden">
+            제명: 배틀그라운드, 이용등급: 청소년이용불가, 등급분류일자: 2017년
+            4월 26일, 상호: (주)카카오게임즈
+          </p>
+        </a>
       </footer>
     </div>
   </body>

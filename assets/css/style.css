@@ -22,7 +22,7 @@ html {
 .skip-nav {
   width: 100%;
 }
-.skip-nav li {
+.skip-nav-item {
   display: flex;
   position: absolute;
   top: 0;
@@ -32,15 +32,15 @@ html {
   background-color: #000;
   z-index: 2;
 }
-.skip-nav li a {
+.skip-nav-item a {
   position: absolute;
   transform: translateY(-130%);
   margin: 10px 0;
   padding: 10px 0;
   color: #fff;
 }
-.skip-nav li a:active,
-.skip-nav li a:focus {
+.skip-nav-item a:active,
+.skip-nav-item a:focus {
   position: static;
   transform: none;
 }
@@ -75,10 +75,10 @@ html {
   flex-flow: row nowrap;
   height: 100%;
 }
-.menu-list li {
+.menu-list-item {
   height: 100%;
 }
-.menu-list li a {
+.menu-list-item a {
   display: flex;
   align-items: center;
   padding: 0 20px;
@@ -86,13 +86,13 @@ html {
   font-size: 1.25rem;
   color: #adadad;
 }
-.menu-list li:nth-child(-2n + 3) a {
+.menu-list-item:nth-child(-2n + 3) a {
   color: #f2a900;
 }
-.menu-list li a:hover {
+.menu-list-item a:hover {
   color: #fff;
 }
-.menu-list li a i {
+.menu-list-item a i {
   margin-left: 3px;
   font-size: 0.7rem;
 }
@@ -101,7 +101,7 @@ html {
   flex-flow: row nowrap;
   padding-right: 10px;
 }
-.utility li a {
+.utility-item a {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
@@ -110,14 +110,14 @@ html {
   font-size: 1.25rem;
   color: #adadad;
 }
-.utility li a:hover {
+.utility-item a:hover {
   color: #fff;
 }
-.utility li:first-child a i {
+.utility-item:first-child a i {
   padding-right: 15px;
   font-size: 0.8rem;
 }
-.utility li:last-child a i {
+.utility-item:last-child a i {
   font-size: 1.25rem;
 }
 .buy-btn {
@@ -334,7 +334,7 @@ html {
   padding-bottom: 30px;
   border-bottom: 1px solid #fff;
 }
-.SNS-list li {
+.SNS-list-item {
   margin-right: 25px;
 }
 .corp {
@@ -361,13 +361,13 @@ html {
   display: flex;
   flex-flow: row wrap;
 }
-.corp-list li a {
+.corp-list-item a {
   position: relative;
   margin-left: 40px;
   font-size: 0.8rem;
   color: #707070;
 }
-.corp-list li a::before {
+.corp-list-item a::before {
   content: '';
   position: absolute;
   top: 0;
@@ -376,20 +376,23 @@ html {
   height: 16px;
   background-color: #707070;
 }
-.corp-list li a:hover {
+.corp-list-item a:hover {
   color: #fff;
 }
-.corp-list li:first-child a {
+.corp-list-item:first-child a {
   margin-left: 0;
   color: #fff;
 }
-.corp-list li:first-child a::before {
+.corp-list-item:first-child a::before {
   content: none;
 }
 .footer-img {
   align-self: start;
   grid-row: 2;
   grid-column: 2;
+}
+.footer-img img {
+  width: 100%;
 }
 
 @media (max-width: 1400px) {
@@ -403,17 +406,19 @@ html {
     background-color: transparent;
     color: #adadad;
   }
-  .main-menu {
-    display: none;
+  .menu-list-item a {
+    padding: 0 7px;
+    font-size: 1rem;
   }
   .utility {
     margin-left: auto;
   }
   .buy-btn {
-    display: none;
+    width: 80px;
+    font-size: 0.8rem;
   }
-  .mobile-menu-btn {
-    display: flex;
+  .buy-btn i {
+    font-size: 0.6rem;
   }
 
   /* 메인 */
@@ -453,6 +458,18 @@ html {
   .patch-card:first-of-type {
     margin-right: 0;
     margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 955px) {
+  .menu-list {
+    display: none;
+  }
+  .buy-btn {
+    display: none;
+  }
+  .mobile-menu-btn {
+    display: flex;
   }
 }
 
@@ -499,7 +516,7 @@ html {
   }
 
   /* 푸터 */
-  .SNS-list li a {
+  .SNS-list-item a {
     padding: 5px 0;
     font-size: 0.8rem;
   }
